@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
 
 const tiers = [
   {
-    title: 'Free',
+    title: 'Basic',
     price: '15',
     description: ['15 Minute Phone Session', 'Google Doc Template', 'Email Template', 'Email support'],
     buttonText: 'Sign Up',
