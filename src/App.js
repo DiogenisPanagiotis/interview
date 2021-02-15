@@ -48,7 +48,10 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
   },
-  android: {
+  androidSmall: {
+    fontSize: 30,
+  },
+  androidLarge: {
     fontSize: 200,
   },
   subIcon: {
@@ -184,7 +187,7 @@ function App() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar} id="home">
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Land Any Interview
+            <AndroidIcon className={classes.androidSmall} />
           </Typography>
           <nav>
             <Link variant="button" color="textPrimary" href="#pricing" className={classes.link}>
@@ -202,7 +205,7 @@ function App() {
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Box textAlign='center'>
-          <AndroidIcon className={classes.android} />
+          <AndroidIcon className={classes.androidLarge} />
         </Box>
         <Typography component="h3" variant="h3" align="center" color="textPrimary" gutterBottom>
           {intro.title}
